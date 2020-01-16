@@ -1,7 +1,7 @@
 {
-  "name": "practica7",
+  "name": "HHackathon",
   "version": "1.0.0",
-  "description": "",
+  "description": "hackathon project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
