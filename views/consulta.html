@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Consulta Marcas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: teal;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="w3-container w3-teal">
+        <h1>Marcas</h1>
+
+    </div>
+    <br>
+    <table class="w3-table-all w3-card-4">
+        <th class="w3-red">
+            Nombre
+        </th>
+        <th class="w3-red">
+            Establecimiento
+        </th>
+        <th class="w3-red">
+            Origen
+        </th>
+        <th class="w3-red">
+            URL
+        </th>
+        <%marcas.forEach((marca)=>{ %>
+            <tr>
+                <td>
+                    <%=marca.nombre%>
+                </td>
+                <td>
+                    <%=marca.establecimiento%>
+                </td>
+                <td>
+                    <%=marca.origen%>
+                </td>
+                <td>
+                    <%=marca.url%>
+                </td>
+            </tr>
+            <%});%>
+    </table>
+    <br>
+
+    <ul class="w3-ul">
+        <li class="w3-padding-small"><a href="/practica7/">Regresar a la página principal</a></li>
+    </ul>
+    <footer class="footer">
+
+        <p>Diseño de Aplicaciones Web</p>
+    </footer>
+</body>
+
+</html>

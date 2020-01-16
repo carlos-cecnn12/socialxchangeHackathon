@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Práctica 7</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: teal;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="w3-container w3-teal">
+        <h1>Práctica 7 (CRUD)</h1>
+    </div>
+    <div class="w3-row">
+
+        <div class="w3-col m5 l3">
+
+            <form action="consultarMarca" method="GET" class="w3-container">
+                <div class="w3-container w3-red">
+                    <h3>Busca una marca</h3>
+                </div>
+                <br>
+                <label>Nombre de la marca</label>
+                <input class="w3-input" type="text" name="marca">
+                <br>
+                <input class="w3-btn w3-red" type="submit" value="Submit"> </form>
+        </div>
+        <div class="w3-col m7 l9">
+
+            <ul class="w3-ul w3-hoverable">
+                <li><a href="/practica7/altaMarca">Dar de alta una nueva marca</a></li>
+                <li><a href="/practica7/bajaMarca">Dar de baja una marca</a></li>
+                <li><a href="/practica7/actualizarMarca">Modificar una marca</a></li>
+                <li><a href="/practica7/consultarMarcas">Listar todas las marcas</a></li>
+            </ul>
+        </div>
+    </div>
+    <footer class="footer">
+
+        <p>Diseño de Aplicaciones Web</p>
+
+    </footer>
+
+</body>
+
+
+</html>
